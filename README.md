@@ -7,8 +7,9 @@ See also lachele/ambertools on Docker Hub.
 
 # How to run?
 1. [Install docker](https://docs.docker.com/engine/installation/)
-- [osx](https://docs.docker.com/docker-for-mac/)
-- [linux](https://docs.docker.com/engine/installation/#/on-linux)
+
+    - [osx](https://docs.docker.com/docker-for-mac/)
+    - [linux](https://docs.docker.com/engine/installation/#/on-linux)
 
 2. Example
 ```bash
