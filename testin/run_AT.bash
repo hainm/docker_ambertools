@@ -5,7 +5,8 @@
 
 ##
 ## Change these variables as desired
-IMAGE='ambertools:16'
+# IMAGE='ambertools:16'
+IMAGE='lachele/ambertools'
 #IMAGE='lachele/ambertools:16'
 WORKDIR=$(pwd) # use an absolute path if you change this
 GROUP=${GROUPS[0]}  # your group id
@@ -19,16 +20,7 @@ docker run --rm=${RM} \
   -v ${WORKDIR}:/home/working \
   ${IMAGE} \
   /bin/bash -c "\
-  chown $UID:${GROUP} /home/working \
-  && groupadd -g ${GROUP} working \
-  && adduser --home /home/working \
-      --shell /bin/bash \
-      --uid $UID \
-      --gid ${GROUP} \
-      --disabled-password \
-      --system working \
-  && su - working \
-  && cd /home/working \
+     cd /home/working \
   && source /usr/local/amber16/amber.sh \
   &&  $1"
 
