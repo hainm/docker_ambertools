@@ -9,7 +9,7 @@ See also lachele/ambertools on Docker Hub.
 1. [Install docker](https://docs.docker.com/engine/installation/)
 2. Example
 ```bash
-bash testin/run_iAT.bash "tleap -f testin/Aglycons.leapin"
+bash testin/run_AT.bash "tleap -f testin/Aglycons.leapin"
 bash testin/run_AT.bash "./testin/RUN.sh"
 ```
 
