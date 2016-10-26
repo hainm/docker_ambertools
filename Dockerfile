@@ -22,10 +22,11 @@ RUN     cd /usr/local/amber16 \
     &&  ./update_amber --show-applied-patches \
     &&  ./update_amber --update \
     &&  ./update_amber --show-applied-patches \
-    &&  ./configure --with-python /usr/local/bin/python3.5 -noX11 gnu \
+    &&  ./AmberTools/src/configure_python \
+    &&  ./configure -noX11 gnu \
     &&  . ${AMBERHOME}/amber.sh \
     &&  make -j4 install \
-    &&  ./configure --with-python /usr/local/bin/python3.5 -noX11 -mpi gnu \
+    &&  ./configure -noX11 -mpi gnu \
     &&  make -j4 install 
 
 CMD ["more","/usr/local/USAGE.txt"]
