@@ -9,6 +9,8 @@ See also lachele/ambertools on Docker Hub.
 1. [Install docker](https://docs.docker.com/engine/installation/)
 2. Example
 ```bash
+git clone https://github.com/Amber-MD/docker_ambertools
+cd docker_ambertools
 # build prmtop and rst7 by using tleap
 bash testin/run_AT.bash "tleap -f testin/Aglycons.leapin"
 # run minimization with sander.MPI
